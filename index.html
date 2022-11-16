@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Shadana's Book Shop Survey Form</h1>
+    <p id="description">Thank you for taking the time to help me improve the shop</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter your name<input type="text" id="name" placeholder="Name" required /></label>
+        <label id="email-label" for="email">Enter your email<input type="email" id="email" placeholder="email" required /></label>
+        <label id="number-label" for="age">Enter your age<input type="number" id="number" min="12" max="100" placeholder="age" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Which option best describes you?</legend>
+        <select type="dropdown" id="dropdown">
+          <option>Student</option>
+          <option>teacher</option>
+          <option>writer</option>
+          <option>Prefer not to say</option>
+          <option>other</option>
+        </select></label>
+      </fieldset>
+      <fieldset>
+        <legend>Would You recommend us to your friends?</legend>
+        <input type="radio" name="recommend-us" id="radio1" value="yes" /><label class="inline" for="radio1">Yes</label>
+       <input type="radio" name="recommend-us" id="radio2" value="no" /> <label class="inline" for="radio2">No</label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to see improved? (check all that apply)</legend>
+        <label><input type="checkbox" value="Novels">Novels</label>
+        <label><input type="checkbox" value="Short stories">Short stories</label>
+        <label><input type="checkbox" value="Monthly Recommendations">Monthly Recommendations</label>
+        <label><input type="checkbox" value="Podcast">Podcast</label>
+        <label><input type="checkbox" value="Blog">Blog</label> 
+        <label><input type="checkbox" value="Book clubs">Book clubs</label>
+        <label><input type="checkbox" value="Forum">Forum</label>
+      </fieldset>
+      <fieldset>
+        <legend>Any comments or suggestions</legend>
+        <textarea rows=4 cols=40 placeholder="Enter your comment here"></textarea>
+      </fieldset>
+      <fieldset>
+        <button type="submit" id="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
